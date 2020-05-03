@@ -37,7 +37,7 @@ public class AppTest {
 
         driver.manage().window().maximize();
         WebDriverRunner.setWebDriver(driver);
-
+        /*
         open("https://dev.n7lanit.ru/");
 
         //шаг первый
@@ -85,5 +85,7 @@ public class AppTest {
         //Шаг двенадцатый
 
         $(By.xpath("//div[@class = 'container navbar-full navbar-desktop-nav']//a[contains(text(), 'Темы')]")).click();
+
+         */
     }
 }
