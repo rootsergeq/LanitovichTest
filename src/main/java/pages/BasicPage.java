@@ -29,8 +29,8 @@ public class BasicPage {
         $(By.xpath("(//button[@class = 'btn btn-primary btn-block btn-outline'])[2]")).click();
     }
 
-    public void vvodimInteresniText() {
-        String text = "заданная последовательность стоп (обычно от четырёх до одиннадцати) называлась стихом";
+    public void vvodimInteresniText(String text) {
+//        String text = "заданная последовательность стоп (обычно от четырёх до одиннадцати) называлась стихом";
         $(By.xpath("//textarea")).sendKeys(text);
     }
 
@@ -38,10 +38,11 @@ public class BasicPage {
         $(By.xpath("//div[@class='editor-footer']//button[@class='btn btn-primary btn-sm pull-right']")).click();
     }
 
-    public void proverkaOtobrazheniaSoobxhenia() {
-        String text = "заданная последовательность стоп (обычно от четырёх до одиннадцати) называлась стихом";
+    public void proverkaOtobrazheniaSoobxhenia(String text) {
+//        String text = "заданная последовательность стоп (обычно от четырёх до одиннадцати) называлась стихом";
         Assert.assertEquals($(By.xpath("(//article[@class = 'misago-markup']//p[contains(text(), '" + text + "')])[1]")).getText(), text);
     }
+
     public void perehodNaVkladkuTemi() {
         $(By.xpath("//div[@class = 'container navbar-full navbar-desktop-nav']//a[contains(text(), 'Темы')]")).click();
     }

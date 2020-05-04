@@ -2,7 +2,7 @@ package Steps;
 
 import cucumber.api.java.Before;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.open;
 
 public class Hooks {
 

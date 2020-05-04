@@ -5,6 +5,7 @@ import pages.BasicPage;
 
 public class BasicPageDef {
     BasicPage basicPage = new BasicPage();
+
     @И("Нажимаем на Sign in")
     public void нажимаемНаSignIn() {
         basicPage.clickButton();
@@ -30,9 +31,9 @@ public class BasicPageDef {
         basicPage.nazimaemNaOtvetit();
     }
 
-    @И("Вводим интересный текст")
-    public void вводимИнтересныйТекст() {
-        basicPage.vvodimInteresniText();
+    @И("Вводим интересный текст \"(.+)\"")
+    public void вводимИнтересныйТекст(String text) {
+        basicPage.vvodimInteresniText(text);
     }
 
     @И("нажимаем отправить ответ")
@@ -40,9 +41,9 @@ public class BasicPageDef {
         basicPage.NazhimaemOtpravitOtvet();
     }
 
-    @И("проверяем отображение сообщения в теме")
-    public void проверяемОтображениеСообщенияВТеме() {
-        basicPage.proverkaOtobrazheniaSoobxhenia();
+    @И("проверяем отображение сообщения в теме \"(.+)\"")
+    public void проверяемОтображениеСообщенияВТеме(String text) {
+        basicPage.proverkaOtobrazheniaSoobxhenia(text);
     }
 
     @И("переходим на вкладку Темы")
