@@ -6,6 +6,7 @@ import pages.BasicPage;
 public class BasicPageDef {
     BasicPage basicPage = new BasicPage();
 
+
     @И("Нажимаем на Sign in")
     public void нажимаемНаSignIn() {
         basicPage.clickButton();
@@ -20,6 +21,24 @@ public class BasicPageDef {
     public void проверяемЧтоМыПрошлиРегистрацию() {
         basicPage.proverkaVhoda();
     }
+
+    @И("выбираем случайную тему")
+    public void выбираемСлучайнуюТему() {
+        basicPage.vibiraemRandomTemu();
+    }
+    @И("нажимаем на всплывающее окно подписаться")
+    public void нажимаемНаВсплывающееОкноПодписаться() {
+        basicPage.nazhimaemNaVipodausheeOknoPodpisku();
+    }
+
+
+    @И("нажимаем на подписки")
+    public void нажимаемНаПодписки() {
+        basicPage.vkladkaPodpiski();
+    }
+
+
+    /*
 
     @И("Поиск случайной темы и нажимаем на неё")
     public void поискСлучайнойТемыИНажимаемНаНеё() {
@@ -50,4 +69,7 @@ public class BasicPageDef {
     public void переходимНаВкладкуТемы() {
         basicPage.perehodNaVkladkuTemi();
     }
+
+     */
+
 }

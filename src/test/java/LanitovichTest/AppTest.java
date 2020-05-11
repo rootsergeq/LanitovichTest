@@ -24,7 +24,7 @@ public class AppTest {
         System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
         Configuration.startMaximized = true;
 
-        Configuration.timeout = 10000;
+        Configuration.timeout = 20000;
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-save-password-bubble");
         WebDriver driver = new ChromeDriver(options);
