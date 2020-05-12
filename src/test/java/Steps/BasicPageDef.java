@@ -37,6 +37,20 @@ public class BasicPageDef {
         basicPage.vkladkaPodpiski();
     }
 
+    @И("нажимаем на вкладку активные")
+    public void нажимаемНаВкладкуАктивные() {
+        basicPage.NazhimaemNaAktivVkladku();
+    }
+
+    @И("нажимаем на неактивные")
+    public void нажимаемНаНеактивные() {
+        basicPage.ubiraemIzAktivnih();
+    }
+
+    @И("проверяем значение ссылки")
+    public void проверяемЗначениеСсылки() {
+    }
+
 
     /*
 
