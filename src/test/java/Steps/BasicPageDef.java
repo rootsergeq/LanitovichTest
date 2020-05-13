@@ -49,41 +49,12 @@ public class BasicPageDef {
 
     @И("проверяем значение ссылки")
     public void проверяемЗначениеСсылки() {
+        basicPage.proverkaSsilki();
     }
 
 
-    /*
-
-    @И("Поиск случайной темы и нажимаем на неё")
-    public void поискСлучайнойТемыИНажимаемНаНеё() {
-        basicPage.poiskRandomnoyTemi();
+    @И("нажимаем на вкладку все")
+    public void нажимаемНаВкладкуВсе() {
+        basicPage.nazhimaemNaVse();
     }
-
-    @И("Нажимаем на ответить")
-    public void нажимаемНаОтветить() {
-        basicPage.nazimaemNaOtvetit();
-    }
-
-    @И("Вводим интересный текст \"(.+)\"")
-    public void вводимИнтересныйТекст(String text) {
-        basicPage.vvodimInteresniText(text);
-    }
-
-    @И("нажимаем отправить ответ")
-    public void нажимаемОтправитьОтвет() {
-        basicPage.NazhimaemOtpravitOtvet();
-    }
-
-    @И("проверяем отображение сообщения в теме \"(.+)\"")
-    public void проверяемОтображениеСообщенияВТеме(String text) {
-        basicPage.proverkaOtobrazheniaSoobxhenia(text);
-    }
-
-    @И("переходим на вкладку Темы")
-    public void переходимНаВкладкуТемы() {
-        basicPage.perehodNaVkladkuTemi();
-    }
-
-     */
-
 }

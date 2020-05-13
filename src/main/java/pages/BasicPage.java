@@ -31,10 +31,19 @@ public class BasicPage {
         String result = $(By.xpath("//div[(.//span[(@class='btn-text') and (contains(text(), 'Неактивна'))]) and contains(@class, \"media-body\")]//a")).getAttribute("href");
         config.Storage.add(result);
     }
+
     public void proverkaSsilki() {
-        System.out.println(link);
-        ////div[@class = 'media-body']//a сделать ссылку как в стринг реsult
+
+
+        int k = (int) (Math.random() * (2)) + 2;
+        if (k % 2 != 0) {
+            k = k + 1;
+        }
+        String result2 = $(By.xpath("//div[@class = 'media-body']//a")).getAttribute("href");
+        config.Storage.add(result2);
+        System.out.println(result2);
     }
+
 
 
     public void nazhimaemNaVipodausheeOknoPodpisku() {
@@ -53,6 +62,10 @@ public class BasicPage {
     public void ubiraemIzAktivnih() {
         $$(By.xpath("//*[contains(@class, 'btn-link') and contains(.,'Отписаться ')]")).filter(Condition.visible).get(0).click();
     }
+    public void nazhimaemNaVse() {
+        $x("//div[@class = 'container']//a[contains(text(), 'Все')]").click();
+    }
+
 }
 
 
